@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "e71ea0b9-ed1a-4081-8692-49eab503c889",
+		"name": "Bookshop NonAuth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8888/bookshop/authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/bookshop/authors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"bookshop",
+						"authors"
+					]
+				},
+				"description": "Get all authors."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bookshop/books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/bookshop/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"bookshop",
+						"books"
+					]
+				},
+				"description": "Get all books."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bookshop/genres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/bookshop/genres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"bookshop",
+						"genres"
+					]
+				},
+				"description": "Get all genres."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bookshop/comment/id/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/bookshop/comment/id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"bookshop",
+						"comment",
+						"id",
+						"1"
+					]
+				},
+				"description": "Get comments from book id."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/bookshop/book/id/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/bookshop/book/id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"bookshop",
+						"book",
+						"id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "a61661d4-815e-4b6a-92ca-5492b1f4ef27",
+		"name": "Bookshop ROLE_USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8888/bookshop/comment/save",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "welcome1",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Steve",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"msg\":\"New comment!\",\"bookId\":{\"id\":1,\"name\":\"Book1\",\"authorId\":{\"id\":2,\"authorName\":\"Steve\"},\"genreId\":{\"id\":1,\"genreName\":\"Classic\"}},\"userInfoId\":{\"id\":2,\"username\":\"Steve\",\"password\":\"$2a$10$AjHGc4x3Nez/p4ZpvFDWeO6FGxee/cVqj5KHHnHfuLnIOzC5ag4fm\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/bookshop/comment/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"bookshop",
+						"comment",
+						"save"
+					]
+				},
+				"description": "Post comment."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

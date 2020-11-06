@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "5292a3a7-dc59-495d-b952-59732992c054",
+		"name": "Bookshop ROLE_ADMIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8888/bookshop/book/save",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "Alan",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "welcome1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"New Book\",\"authorId\":{\"id\":1,\"authorName\":\"Sam\"},\"genreId\":{\"id\":1,\"genreName\":\"Classic\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/bookshop/book/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"bookshop",
+						"book",
+						"save"
+					]
+				},
+				"description": "Post new book."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
